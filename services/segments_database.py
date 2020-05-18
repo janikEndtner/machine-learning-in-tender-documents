@@ -101,7 +101,7 @@ trainingdata = Table(
     Column('createdAt', DateTime, default=datetime.datetime.utcnow),
     ForeignKeyConstraint(
         ['document_id'], ['document.id'],
-        name='fk_chapter_document'
+        name='fk_trainingdata_document'
     ),
 )
 

@@ -1,7 +1,7 @@
 import configparser
-# import mysql.connector
 import logging as log
 import pandas as pd
+from sqlalchemy.dialects import mysql
 
 config = configparser.ConfigParser()
 

@@ -1,11 +1,10 @@
 import logging as log
 import requests
-from services.segments_database import insert_document, insert_project
+from services.segments_database import insert_document, insert_project, do_query
 from sqlalchemy.exc import OperationalError, IntegrityError
 from helpers.Status import Status
 from requests.exceptions import HTTPError
 import traceback
-from segments_database import do_query
 
 class Project:
 
